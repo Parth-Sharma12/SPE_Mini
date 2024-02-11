@@ -1,4 +1,4 @@
 FROM ubuntu:latest
 EXPOSE 8080
-ADD target/devops-integration.jar devops-integration.jar
-ENTRYPOINT ["java","-jar","/devops-integration.jar"]
+ADD target/spe_mini_image.jar spe_mini_image.jar
+ENTRYPOINT ["java","-jar","/spe_mini_image.jar"]
