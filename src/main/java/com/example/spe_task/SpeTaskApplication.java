@@ -1,16 +1,16 @@
 package com.example.spe_task;
 
-import java.lang.Math;
-import java.io.*;
-
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 @SpringBootApplication
 @RestController
-public class calculator {
+public class SpeTaskApplication {
     @GetMapping
     public static void main(String[] args) throws IOException, InterruptedException {
         String c, n, x;
@@ -44,14 +44,23 @@ public class calculator {
                     System.out.println("The Subtraction of the numbers: " + a + "-" + b + " = " + sub);
                 }
                 case 3 -> {
-                    System.out.println("\n Enter 1st number: ");
+                    System.out.println("\nEnter 1st number:");
                     c = br.readLine();
                     a = Double.parseDouble(c);
-                    System.out.println(" Enter 2nd number: ");
+                    System.out.println("\nEnter 2nd number:");
                     n = br.readLine();
                     b = Double.parseDouble(n);
-                    mul = a * b;
-                    System.out.println("The Subtraction of the numbers: " + a + "x" + b + " = " + mul);
+                    mul = a*b;
+                    System.out.println("The Multiplication of the number :" + a + "x" + b + "=" + mul );
+
+//                    System.out.println("\n Enter 1st number: ");
+//                    c = br.readLine();
+//                    a = Double.parseDouble(c);
+//                    System.out.println(" Enter 2nd number: ");
+//                    n = br.readLine();
+//                    b = Double.parseDouble(n);
+//                    mul = a * b;
+//                    System.out.println("The Subtraction of the numbers: " + a + "x" + b + " = " + mul);
                 }
                 case 4 -> {
                     System.out.println("\n Enter 1st number: ");
