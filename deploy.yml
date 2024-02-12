@@ -19,4 +19,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker run -it -d --name Mini project parthdocker12/spe_mini_image
+      shell: docker run -it -d --name Mini_project parthdocker12/spe_mini_image
