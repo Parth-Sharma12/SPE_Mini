@@ -18,8 +18,8 @@ public class SpeTaskApplication {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
-            System.out.println("\n         Scientific Calculator \n Enter your choice to perform an action:  \n" );
-            System.out.println("Enter 1 for Addition(+) \n 2 for Subtraction(-) \n 3 for Multiplication(x) \n 4 for Division(÷) \n 5 for power \n 6 for factorial \n 7 for Squareroot\n  0 for Exit \n=> ");
+            System.out.println("\n************Welcome to Scientific Calculator*************** \n Enter your choice to perform an action:  \n" );
+            System.out.println("Enter \n 1 for Addition(+) \n 2 for Subtraction(-) \n 3 for Multiplication(x) \n 4 for Division(÷) \n 5 for power \n 6 for factorial \n 7 for Squareroot\n 8 for log \n 0 for Exit \n=> ");
             x = br.readLine();
             int s = Integer.parseInt(x);
             switch (s) {
@@ -85,6 +85,13 @@ public class SpeTaskApplication {
                     a = Double.parseDouble(c);
                     root(a);
                 }
+                case 8 -> {
+                    System.out.println("\n Enter the number: ");
+                    c = br.readLine();
+                    a = Double.parseDouble(c);
+                    log(a);
+                }
+
 
 
                 case 0 -> {
@@ -130,6 +137,10 @@ public class SpeTaskApplication {
     public static double root(double num1){
         System.out.println(" √"+num1+" = "+Math.pow(num1, 0.5));
         return Math.pow(num1, 0.5);
+    }
+    public static double log(double num1){
+        System.out.println("Logarithm base 10 of " + num1 + " is: " + Math.log10(num1));
+        return Math.log10(num1);
     }
 
 
