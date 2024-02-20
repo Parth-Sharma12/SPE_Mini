@@ -9,7 +9,7 @@ class SpeTaskApplicationTests {
     @Test
     public void testAdd() {
         double result = SpeTaskApplication.add(3, 4);
-        assertEquals(7, result, 0.0001,"testing addition of two numbers"); // Delta is used for double comparison
+        assertEquals(7, result, 0.0001,"testing addition of two numbers:"); // Delta is used for double comparison
     }
 
     @Test
