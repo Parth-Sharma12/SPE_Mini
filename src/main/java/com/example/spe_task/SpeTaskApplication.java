@@ -24,7 +24,7 @@ public class SpeTaskApplication {
             int s = Integer.parseInt(x);
             switch (s) {
                 case 1 -> {
-                    System.out.println("\n Enter 1st number: ");
+                    System.out.println("\n Enter 1st number:: ");
                     c = br.readLine();
                     a = Double.parseDouble(c);
                     System.out.println(" Enter 2nd number: ");
