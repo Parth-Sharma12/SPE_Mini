@@ -1,5 +1,5 @@
 package com.example.spe_task;
-
+////
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,7 +24,7 @@ public class SpeTaskApplication {
             int s = Integer.parseInt(x);
             switch (s) {
                 case 1 -> {
-                    System.out.println("\n Enter 1st number: ");
+                    System.out.println("\n Enter 1st number:: ");
                     c = br.readLine();
                     a = Double.parseDouble(c);
                     System.out.println(" Enter 2nd number: ");
