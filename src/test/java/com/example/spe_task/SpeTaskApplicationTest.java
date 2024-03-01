@@ -54,6 +54,6 @@ class SpeTaskApplicationTests {
     @Test
     public void testFactorialOne() {
         double result = SpeTaskApplication.factorial(1);
-        assertEquals(1 , result,"test factorial of 1");
+        assertEquals(1, result,"test factorial of 1");
     }
 }
