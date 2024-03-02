@@ -124,7 +124,7 @@ public class SpeTaskApplication {
 
         System.out.println("Result: " + num1 + "^" + num2 + " = " + Math.pow(num1, num2));
         return Math.pow(num1, num2);
-    }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
+    }
     public static double factorial(double num1){
         double fct =1;
         for(int i=1;i<=num1;i++){
@@ -139,7 +139,7 @@ public class SpeTaskApplication {
         return Math.pow(num1, 0.5);
     }
     public static double log(double num1){
-        System.out.println("Logarithm base 10 of" + num1 + " is: " + Math.log10(num1));
+        System.out.println("Logarithm base 10 of " + num1 + " is: " + Math.log10(num1));
         return Math.log10(num1);
     }
 
