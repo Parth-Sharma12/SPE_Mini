@@ -14,8 +14,8 @@ class SpeTaskApplicationTests {
 
     @Test
     public void testSubtract() {
-        double result = SpeTaskApplication.subtract(5, 2);
-        assertEquals(3, result, 0.0001,"testing subtraction of two numbers");
+        double result = SpeTaskApplication.subtract(5, 3);
+        assertEquals(2, result, 0.0001,"testing subtraction of two numbers");
     }
 
     @Test
