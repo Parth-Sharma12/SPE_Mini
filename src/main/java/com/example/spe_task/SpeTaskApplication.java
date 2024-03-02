@@ -122,7 +122,7 @@ public class SpeTaskApplication {
     }
     public static double power(double num1,double num2){
 
-        System.out.println("Result: " + num1 + "+" + num2 + " = " + Math.pow(num1, num2));
+        System.out.println("Result: " + num1 + "^" + num2 + " = " + Math.pow(num1, num2));
         return Math.pow(num1, num2);
     }
     public static double factorial(double num1){
